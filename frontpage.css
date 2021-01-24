@@ -6,6 +6,7 @@
 
 body {
    font-family: 'Montserrat', sans-serif;
+   margin: 0px;
 }
 
 .container {
@@ -15,7 +16,15 @@ body {
     padding:1rem 0rem;
 }
 
+.nav-parent{
+    background-color: #f3f4f5;
+    /* background-image: url("/images/wave.svg");
+    background-repeat: no-repeat; */
+    /* height: 100%; */
+}
+
 .navigation {
+    
     margin:0rem 1rem;
     padding:1rem;
     display: flex;
@@ -53,17 +62,12 @@ body {
 .books-list {
     display:flex;
     margin:auto;
-    max-width: 90%;
+    max-width: 70%;
     padding: 0.5rem;
     justify-content:space-between;
     flex-wrap:wrap;
 }
 
-@media only screen and (max-width: 460px){
-    .books-list {
-        justify-content: center;
-    }
-}
 
 .book-info {
     padding:0rem 0.5rem;
@@ -89,10 +93,13 @@ body {
     justify-content: space-around;
     margin:0.5rem;
     height:100vh; 
+    flex-wrap: wrap;
 }
+
 .login-image img {
     width: 500px;
 }
+
 
 .login-content {
     text-align:center;
@@ -110,7 +117,7 @@ body {
 .login-content input{
     border-radius:1rem;
     border:1px solid black;
-    padding:0.7rem 5rem;
+    padding:0.7rem 4rem;
     margin:0.5rem;
 }
 
@@ -140,4 +147,57 @@ body {
 }
 .button-primary:hover {
     opacity:1;
+}
+
+.svg-margin{
+    margin: 0px;
+    /* border: 1px solid black; */
+}
+
+.svg-margin svg{
+    display: block;
+}
+
+.footer{
+    background-color: #f3f4f5;
+}
+
+.footer-flex{
+    max-width: 80%;
+    /* background-color: #f3f4f5; */
+    margin: auto;
+    /* border: 1px solid black; */
+    padding: .5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-flex h4{
+    text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 460px){
+    .login-main{
+        justify-content: center;
+    }
+
+    .login-image img {
+        width: 300px;
+    }
+
+    .footer-flex {
+        flex-wrap: wrap;
+    }
+
+    .books-list {
+        justify-content: center;
+    }
+
+    .login-content input{
+        text-align: center;
+        padding: .7rem 3rem;
+    }
 }
