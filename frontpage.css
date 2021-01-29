@@ -5,6 +5,7 @@
 }
 
 body {
+    position: relative;
    font-family: 'Montserrat', sans-serif;
    margin: 0px;
 }
@@ -85,6 +86,17 @@ body {
     height:226.19px;
 }
 
+.icons{
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.icons i {
+    padding: 0rem .5rem;
+}
+
 /* login page css */
 
 .login-main {
@@ -119,6 +131,7 @@ body {
     border:1px solid black;
     padding:0.7rem 4rem;
     margin:0.5rem;
+    outline: none;
 }
 
 .login-heading {
@@ -155,6 +168,7 @@ body {
 }
 
 .svg-margin svg{
+    height: 10%;
     display: block;
 }
 
@@ -201,3 +215,30 @@ body {
         padding: .7rem 3rem;
     }
 }
+
+/* wave */
+
+.custom-shape-divider-bottom-1611907045 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1611907045 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1611907045 .shape-fill {
+    fill: #9B9B9B;
+}
+
+/* .wave svg{
+    position: absolute;
+} */
